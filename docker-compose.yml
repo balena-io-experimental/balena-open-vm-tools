@@ -1,0 +1,8 @@
+version: '2'
+services:
+  vmtoolsd:
+    build:
+      context: ./open-vm-tools
+      dockerfile: Dockerfile
+    labels:
+      io.balena.features.procfs: '1'
